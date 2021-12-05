@@ -1,14 +1,9 @@
 <template>
-  <div class="home">
-  </div>
+  <v-row class="text-center">
+    <v-col cols="12">
+      <h1>Energy Data Science Challenge</h1>
+      <h2>Tsuneno</h2>
+
+    </v-col>
+  </v-row>
 </template>
-
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-@Options({
-  components: {
-  },
-})
-export default class Home extends Vue {}
-</script>
