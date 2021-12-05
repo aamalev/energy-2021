@@ -2,6 +2,7 @@
   <v-row class="text-center">
     <v-col cols="12">
       <div v-show="building == ''">
+        <h1>Подбор счетчиков</h1>
         <h2>Выберите тип строения</h2>
         <p
           v-for="o, b in pus"
@@ -13,6 +14,8 @@
           ></router-link>
         </p>
       </div>
+
+      <h1 v-show="building">Подбор счетчиков для типа строения: {{ building }}</h1>
       <article
         v-for="pu, tariff in (pus[building] || [])"
         :key="tariff"

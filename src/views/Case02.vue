@@ -2,6 +2,7 @@
   <v-row class="text-center">
     <v-col cols="12">
       <div v-show="building == ''">
+        <h1>Подбор услуг</h1>
         <h2>Выберите тип строения</h2>
         <p
           v-for="o, b in uslugi"
@@ -14,6 +15,7 @@
         </p>
       </div>
       <div v-show="uslugi[building]">
+        <h1 v-show="building">Подбор услуг для типа строения: {{ building }}</h1>
         <h2>Основные услуги</h2>
         <p
           v-for="b in (uslugi[building] || [])"
