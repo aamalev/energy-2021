@@ -17,7 +17,7 @@
         v-for="pu, tariff in (pus[building] || [])"
         :key="tariff"
       >
-        <h2>Тариф: {{ tariff }}</h2>
+        <h2>Тип: {{ tariff }}</h2>
         <p
           v-for="b in pu"
           :key="b"
