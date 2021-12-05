@@ -42,7 +42,7 @@ export default class About extends Vue {
   public client: string = '';
 
   public async created() {
-    let resp = await axios.get('/data/case-04/rec_sn2_tarif.json');
+    let resp = await axios.get('/data/rec_sn2_tarif.json');
     this.clients = resp.data;
   }
 

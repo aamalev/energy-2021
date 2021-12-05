@@ -52,9 +52,9 @@ export default class About extends Vue {
   public building: string = '';
 
   public async created() {
-    let resp = await axios.get('/data/case-02/uslugi.json');
+    let resp = await axios.get('/data/uslugi.json');
     this.uslugi = resp.data;
-    resp = await axios.get('/data/case-02/uslugi_new.json');
+    resp = await axios.get('/data/uslugi_new.json');
     this.uslugi_new = resp.data;
     this.update();
   }
